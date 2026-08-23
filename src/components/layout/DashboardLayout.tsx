@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
+import { ChatWidget } from '@/components/ChatWidget';
 
 export function DashboardLayout({ children }: { children: ReactNode }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -12,6 +13,7 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
         <Header onMenuClick={() => setMobileNavOpen(true)} />
         <main className="flex-1 p-4 sm:p-6 overflow-x-hidden">{children}</main>
       </div>
+      <ChatWidget />
     </div>
   );
 }
