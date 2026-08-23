@@ -127,8 +127,8 @@ export function AnalyticsPage() {
               <AreaChart data={slaTrend as Array<Record<string, number | string>>} margin={{ left: -10, right: 10, top: 10 }}>
                 <defs>
                   <linearGradient id="complianceGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#2563eb" stopOpacity={0.3} />
-                    <stop offset="100%" stopColor="#2563eb" stopOpacity={0} />
+                    <stop offset="0%" stopColor="#059669" stopOpacity={0.3} />
+                    <stop offset="100%" stopColor="#059669" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
@@ -138,7 +138,7 @@ export function AnalyticsPage() {
                 <Area
                   type="monotone"
                   dataKey="compliance"
-                  stroke="#2563eb"
+                  stroke="#059669"
                   strokeWidth={2}
                   fill="url(#complianceGrad)"
                   name="SLA Compliance %"
@@ -226,7 +226,7 @@ export function AnalyticsPage() {
                   <XAxis dataKey="department" tick={{ fontSize: 10, fill: '#64748b' }} axisLine={false} tickLine={false} angle={-20} textAnchor="end" height={60} />
                   <YAxis tick={{ fontSize: 12, fill: '#64748b' }} axisLine={false} tickLine={false} />
                   <Tooltip contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '13px' }} />
-                  <Bar dataKey="averageRisk" fill="#2563eb" radius={[4, 4, 0, 0]} name="Avg Risk %" />
+                  <Bar dataKey="averageRisk" fill="#059669" radius={[4, 4, 0, 0]} name="Avg Risk %" />
                 </BarChart>
               </ResponsiveContainer>
             ) : null}

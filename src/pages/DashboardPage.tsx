@@ -295,7 +295,7 @@ export function DashboardPage() {
                   <Tooltip
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '13px' }}
                   />
-                  <Bar dataKey="averageRisk" fill="#2563eb" radius={[0, 4, 4, 0]} />
+                  <Bar dataKey="averageRisk" fill="#059669" radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             ) : null}

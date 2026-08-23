@@ -396,7 +396,7 @@ export function LandingPage() {
                   <Tooltip
                     contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '13px' }}
                   />
-                  <Bar dataKey="risk" fill="#2563eb" radius={[6, 6, 0, 0]} />
+                  <Bar dataKey="risk" fill="#059669" radius={[6, 6, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
@@ -525,7 +525,7 @@ function DashboardPreview() {
                 <Tooltip
                   contentStyle={{ borderRadius: '8px', border: '1px solid #e2e8f0', fontSize: '12px' }}
                 />
-                <Bar dataKey="risk" fill="#2563eb" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="risk" fill="#059669" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </div>
